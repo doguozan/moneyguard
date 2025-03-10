@@ -1,0 +1,85 @@
+.header {
+  font-family: var(--font-family);
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25),
+    inset 0 -3px 2px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(276deg, #2e1746 3.19%, #2e225f 100%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin-right: 1rem;
+  font-size: 16px;
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white-600);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .username {
+    font-size: 14px;
+  }
+
+  .logoutButton {
+    font-size: 14px;
+  }
+  .headerLine {
+    display: none;
+  }
+  .headerExit {
+    display: none;
+  }
+  .username {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  .container {
+    max-width: 774px; /* 710px content + 32px padding each side */
+    padding: 1rem 32px;
+  }
+}

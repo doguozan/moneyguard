@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  padding-right: 69px;
+}
+
+/* Mobil görünüm */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Tablet görünüm */
+@media (min-width: 769px) and (max-width: 1279px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 710px;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: 710px;
+    margin: 0 auto;
+    border-right: none;
+    padding-right: 0;
+    display: grid;
+    gap: 28px 32px;
+    grid-template-columns: 336px 336px;
+    grid-template-areas:
+      "navigation currency"
+      "balance currency";
+    justify-content: space-between;
+  }
+}
+
+/* Masaüstü görünüm */
+@media (min-width: 1280px) {
+  .container {
+    gap: 69px;
+  }
+}

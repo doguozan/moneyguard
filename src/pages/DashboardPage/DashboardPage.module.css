@@ -1,0 +1,37 @@
+.dashboardPage {
+  min-height: 100vh;
+  /* background: linear-gradient(180deg, #2E1E5E 0%, #1F1348 100%); */
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .container {
+    margin-top: 12px;
+    padding: 0 15px 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .container {
+    gap: 20px;
+    padding: 0 32px 56px;
+    max-width: 774px; /* 710px content + 32px padding each side */
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 0 20px;
+  }
+}

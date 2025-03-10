@@ -1,0 +1,26 @@
+.selectorContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.selectWrapper {
+  width: 180px;
+}
+
+.select {
+  border-radius: 8px;
+  background-color: #1f1f27;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .selectorContainer {
+    justify-content: center;
+  }
+
+  .selectWrapper {
+    width: 150px;
+  }
+}

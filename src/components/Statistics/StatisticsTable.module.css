@@ -1,0 +1,142 @@
+.tableContainer {
+  width: 100%;
+  /* background: rgba(74, 86, 226, 0.1); */
+  border-radius: 8px;
+  margin-top: 46px;
+  padding: 0 20px;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.categoryHeader,
+.sumHeader {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.categoryHeader {
+  padding-left: 20px;
+}
+
+.sumHeader {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.sortIcon {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.tableBody {
+  margin-bottom: 20px;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  color: var(--white-color);
+  font-size: 16px;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.categoryCell {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 20px;
+}
+
+.colorIndicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.sumCell {
+  text-align: right;
+  color: #ff6596;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.tableSummary {
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.summaryRow {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 8px 20px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.summaryLabel {
+  color: var(--white-color);
+  padding-left: 20px;
+}
+
+.summaryValue {
+  color: #ff6596;
+}
+
+.summaryValue.income {
+  color: #ffb627;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  padding: 40px 0;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .tableContainer {
+    padding: 15px;
+  }
+
+  .tableHeader,
+  .tableRow,
+  .summaryRow {
+    padding: 10px;
+  }
+
+  .sumCell,
+  .sumHeader {
+    width: 100px;
+  }
+}
